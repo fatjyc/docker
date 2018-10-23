@@ -9,4 +9,4 @@ RUN apk add --update-cache nodejs nodejs-npm --repository http://dl-3.alpinelinu
 # Install Yarn Package Manager 1.5.1
 RUN apk add --update-cache yarn --repository http://dl-3.alpinelinux.org/alpine/edge/community/
 
-CMD ["node", "version"]
+CMD ["node", "--version"]
