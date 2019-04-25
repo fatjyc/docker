@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 # install packages
-RUN sed -i 's/archive.ubuntu.com/cn.archive.ubuntu.com/g' /etc/apt/sources.list && \
+RUN sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list && \
     apt-get update && apt-get -y upgrade && \
     apt-get install -y --no-install-recommends software-properties-common ca-certificates curl fontconfig tzdata unzip vim wget rsync iputils-ping iproute2 net-tools && \
     echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
